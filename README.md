@@ -36,8 +36,7 @@ Add somethign like this to your `prometheus.yml`
 ```
 
 ## Grafana
-A sample Grafana dashboard configuration file is provided in `/grafana/ups.json`.  Note that the Prometheus data source
-names are dynamically generated and will need to be edited with the correct value you can find in Grafana using the Query Editor/Metrics Browser.
+A sample Grafana dashboard configuration file is provided in `/grafana/ups.json`.  
 
 # TODO
 * Add github workflow to push container image to Docker Hub

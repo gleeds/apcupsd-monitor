@@ -2,8 +2,6 @@ FROM golang:latest AS builder
 RUN git clone https://github.com/mdlayher/apcupsd_exporter.git
 WORKDIR apcupsd_exporter
 RUN go build cmd/apcupsd_exporter/main.go
-RUN ls
-RUN pwd
 
 FROM ubuntu:18.04
 RUN apt-get update && apt-get install -y apcupsd && rm -rf /var/lib/apt/lists/*

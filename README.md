@@ -1,8 +1,11 @@
 # apcupsd-monitor
-Docker container to expose apcupsd data for use by Prometheus/Grafana 
+Docker container to expose [apcupsd](http://www.apcupsd.org/) data for use by Prometheus/Grafana 
 
 Connects to APC UPS devices via a USB and exposes data for consumption by Prometheus.  I use this on a Raspberry Pi to add 
 my UPS data to [InternetPi](https://github.com/geerlingguy/internet-pi).
+
+This project makes use of [apcupsd_exporter](https://github.com/mdlayher/apcupsd_exporter) to expose
+apcupsd's metrics over HTTP in a form Prometheus can easily consume.
 
 # Configuration
 Edit `apcupsd.conf` as you see fit, particuarly if you prefer to use an Ethernet connected APC UPS device.  You must rebuild

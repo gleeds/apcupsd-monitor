@@ -42,5 +42,4 @@ Add somethign like this to your `prometheus.yml`
 A sample Grafana dashboard configuration file is provided in `/grafana/ups.json`.  
 
 # TODO
-* Add github workflow to push container image to Docker Hub
 * Add the ability to pull configuration at runtime rather than build time

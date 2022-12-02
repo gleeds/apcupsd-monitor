@@ -13,7 +13,7 @@ existing container images after changes to this file.
 
 # Building
 Build the container locally by running:
-`docker run -t -P apcupsd-docker:latest`
+`docker build -t apcupsd-docker:latest .`
 
 # Running
 Assuming you have a `docker-compose.yaml` file already for Prom/Grafana, add a service as follows:
